@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>A</th>
+                <th>B</th>
+                <th>C<div class="resizer"></div>
+                </th>
+                <th>D</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>1</th>
+                <th>A1</th>
+                <th>B1</th>
+                <th>C1</th>
+                <th>D1</th>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <th>A2</th>
+                <th>B2</th>
+                <th>C2</th>
+                <th>D2</th>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+    <textarea name="" id=""></textarea>
+
+</body>
+
+<style>
+    table,
+    td,
+    th {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    table {
+        position: relative;
+        border-collapse: collapse;
+        overflow: hidden;
+    }
+
+    thead th {
+        overflow: auto;
+        resize: horizontal;
+        min-width: 50px;
+        height: 30px;
+    }
+
+    .resizer,::-webkit-resizer {
+        background-color: red;
+        /* transparent */
+        width: 5px;
+        /* no effect */
+        position: absolute;
+        /* no effect */
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 10vh;
+        cursor: ew-resize;
+    }
+</style>
+
+
+
+</html>

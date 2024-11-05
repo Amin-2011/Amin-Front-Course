@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="row_1">
+            <div></div>
+        </div>
+        <div class="row_2">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="row_3">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="row_4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+</body>
+
+<style>
+    body{
+        background-color: #000;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 60%;
+        margin: 0 auto;
+        background-color: black;
+        gap: 10px;
+    }
+
+    .row_1 div,
+    .row_2 div,
+    .row_3 div,
+    .row_4 div{
+        background-color: gray;
+    }
+
+    .row_1{
+        display: grid;
+        grid-template: 200px / 1fr;
+        gap: 10px;
+    }
+    .row_2{
+        display: grid;
+        grid-template: 200px / repeat(2, 1fr);
+        gap: 10px;
+    }
+    .row_3{
+        display: grid;
+        grid-template: 200px / repeat(3, 1fr);
+        gap: 10px;
+    }
+    .row_4{
+        display: grid;
+        grid-template: 200px / repeat(4, 1fr);
+        gap: 10px;
+    }
+
+
+</style>
+</html>

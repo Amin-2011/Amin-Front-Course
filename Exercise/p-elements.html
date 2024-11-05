@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p>
+            <a href="#">link 1</a>
+        </p>
+
+        <p>
+            <a href="#">link 2</a>
+        </p>
+
+        <p>
+            <a href="#">link 3</a>
+        </p>
+    </div>
+</body>
+<style>
+    * {
+        transition: 0.5s;
+    }
+
+    div {
+        width: 50%;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.433);
+        padding: 10px 0;
+    }
+
+    body {
+        background: url(/img/Cars/16.jpg) no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+
+    p {
+        position: relative;
+        background-color: rgba(128, 128, 128, 0.477);
+        margin: 10px 0;
+    }
+
+
+    a {
+        display: inline-block;
+        margin: 0 40px;
+        text-decoration: none;
+        background-color: rgba(127, 255, 212, 0.514);
+    }
+
+    p:hover::before,
+    p:hover::after {
+        content: '';
+        width: 15px;
+        height: 20px;
+        background: url(/img/Pepsi.logo.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+    }
+
+    p:hover {
+        margin: 15px;
+    }
+
+    p:hover::before {
+        left: -15px;
+
+    }
+
+    p:hover::after {
+        right:-15px;
+    }
+</style>
+
+</html>

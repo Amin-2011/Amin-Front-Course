@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth-child</title>
+</head>
+
+<body>
+
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+        <li>item6</li>
+        <li>item7</li>
+        <li>item8</li>
+        <li>item9</li>
+    </ul>
+
+
+    <!-- list-style-type устанавливает тип листа -->
+    <!-- :first-child  к  обращение первому дочернему элементу-->
+    <!-- :last-child  к  обращение последнему дочернему элементу-->
+    <!-- :nth-child(number)  к  обращение  дочернему элементу  с помощью номера -->
+    <!-- :nth-child(even or odd) может обращаться к каждом четном или не четном 
+    дочернем элементам 
+    -->
+
+
+</body>
+
+<style>
+
+    ul li:not(:nth-child(odd)){
+        color: dodgerblue;
+    }
+
+/* 
+    ul li:nth-last-of-type(2){
+        color: red;
+    } */
+
+    * {
+        transition: 0.5s;
+    }
+
+    ul {
+        list-style-type: decimal;
+        /* list-style-type: disc; */
+        /* list-style-type: circle; */
+        /* list-style-type: square; */
+        /* list-style-type: lower-roman; */
+        /* list-style-type: upper-roman; */
+        /* list-style-type: lower-alpha; */
+        /* list-style-type: upper-alpha; */
+        /* list-style-type: ethiopic-numeric; */
+        /* list-style-type: georgian; */
+        /* list-style-type: kannada; */
+        /* list-style-type: korean-hangul-formal; */
+        /* list-style-type: katakana; */
+        /* list-style-type: hiragana; */
+        /* list-style-type: armenian; */
+        /* list-style-type: hebrew; */
+        /* list-style-type: tibetan; */
+        /* list-style-type: disclosure-open; */
+        /* list-style-type: lao; */
+        /* list-style-type: none; */
+    }
+
+    /* ul li:first-child{
+        color: red;
+    } 
+    ul li:last-child{
+        color: red;
+    }  */
+
+    /* ul li:nth-child(4){
+        background-color: gray;
+        color: red;
+    } */
+    /* ul li:nth-child(even){
+        background-color: gray;
+        color: red;
+    } */
+
+
+    /* ul li:nth-child(odd){
+        background-color: gray;
+        color: red;
+    } */
+
+
+    /* ul li:nth-child(3n){
+        background-color: gray;
+    } */
+    /* 
+    ul li:nth-child(3n - 1){
+        background-color: gray;
+    } */
+
+    /* ul li:nth-child(odd){
+        background-color: gray;
+    }  */
+
+    /* ul li:nth-child(6){
+        background-color: gray;
+    } */
+
+
+    /* ul li:nth-last-of-type(2){
+        background-color: gray;
+    }  */
+
+    /* ul li {
+        width: 100px;
+        height: 30px;
+    }
+
+    ul li:hover {
+        background: url(/img/Pepsi.logo.png) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.504);
+    } */
+
+    
+</style>
+
+</html>

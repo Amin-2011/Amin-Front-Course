@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        *{
+            transition: 1s;
+        }
+
+        .block{
+            width: 250px;
+            height: 250px;
+            background-color: gray;
+            /* border: solid 2px red; */
+            border-top: 5px solid red;
+            border-left: 5px dotted green;
+            border-right: 5px dashed blue;
+            border-bottom: 5px double black;
+            /* outline: solid 5px green;    */
+            /* outline-offset: 10px; */
+            /* outline-offset: -10px; */
+            /* border-radius: 10px; */
+            /* border-radius: 0 0 0 0; */
+        }
+
+
+        main:hover .block{
+            width: 350px;
+            height: 350px;
+            background-color: darkblue;
+            border-top: 5px solid green;
+            border-left: 5px dotted red;
+            border-right: 5px dashed lightblue;
+            border-bottom: 5px double magenta;
+            border-radius: 30px;
+        }
+        /* .block:active{
+            width: 350px;
+            height: 350px;
+            background-color: darkblue;
+            border-top: 5px solid green;
+            border-left: 5px dotted red;
+            border-right: 5px dashed lightblue;
+            border-bottom: 5px double magenta;
+            border-radius: 30px;
+        } */
+
+        .block2{
+            width: 250px;
+            height: 250px;
+            background-color: gray;
+            border: solid 2px blue;
+            outline: solid 5px green;
+            /* outline-offset: 10px; */
+            /* outline-offset: -10px; */
+        }
+    </style>
+</head>
+<body>
+    
+
+    <main>
+        <div class="block">
+        
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span class="block2">
+        Lorem, ipsum.
+    </span>
+
+
+
+</body>
+</html>

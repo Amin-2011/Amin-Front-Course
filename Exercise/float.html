@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <div class="content">
+                <h1>My Web Site</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            </div>
+            <nav>
+                <a href="#" style="float: right;">Link</a>
+                <a href="#" style="float: right;">Link</a>
+                <a href="#" style="float: right;">Link</a>
+                <a href="#" style="float: left;">Link</a>
+                <a href="#" style="float: left;">Link</a>
+            </nav>
+        </header>
+        <section>
+            <div class="left">
+                <div class="content">
+                    <h1>Title Heading</h1>
+                    <p><small>Lorem ipsum dolor sit amet.</small></p>
+                    <div class="img">
+                    </div>
+                    <p>Some text.....</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quae illum at quibusdam omnis nam neque, possimus illo ducimus perspiciatis excepturi veritatis officia, laboriosam reprehenderit earum eius maxime vel repudiandae?
+                    </p>
+                </div>
+                <div class="content">
+                    <h1>Title Heading</h1>
+                    <p><small>Lorem ipsum dolor sit amet.</small></p>
+                    <div class="img">
+                    </div>
+                    <p>Some text.....</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quae illum at quibusdam omnis nam neque, possimus illo ducimus perspiciatis excepturi veritatis officia, laboriosam reprehenderit earum eius maxime vel repudiandae?
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="about me">
+                    <h3>About me</h3>
+                    <div class="img"></div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id ipsam fuga quia earum corrupti nulla modi, molestias distinctio nisi laboriosam aut reprehenderit voluptas eos soluta minima ea eum blanditiis quaerat.
+                    </p>
+                </div>
+                <div class="popular post">
+                    <h3>Popular post</h3>
+                    <div class="img"></div>
+                    <div class="img"></div>
+                    <div class="img"></div>
+                </div>
+                <div class="follow me">
+                    <h3>Follow me</h3>
+                    <p>Some text.....</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </main>
+</body>
+<style>
+    * {
+        transition: 1s;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        overflow: auto;
+        min-height: 100vh;
+    }
+
+    header {
+        overflow: auto;
+        text-align: center;
+    }
+
+    header .content {
+        background-color: lightgray;
+        padding: 50px;
+    }
+    
+    main footer{
+        background-color: lightgray;
+        padding: 50px;
+        text-align: center;
+    }
+
+    header .content h1 {
+        font-size: 60px;
+    }
+
+    header .content * {
+        margin: 15px 0;
+    }
+
+    header nav {
+        overflow: auto;
+        background-color: #333;
+    }
+
+    header nav a {
+        padding: 10px 15px;
+        color: snow;
+    }
+
+    header nav a:hover {
+        background-color: red;
+    }
+
+    section{
+        overflow: auto;
+    }
+
+    section .left {
+        padding: 10px;
+        float: left;
+        width: 65%;
+    }
+    section .left .content{
+        margin-bottom: 10px ;
+        padding: 20px 30px;
+        background-color: lightgray;
+
+
+
+    }
+    section .left .content .img{
+        background-color: gray;
+        padding: 30px;
+        height: 150px;
+        color: snow;
+        background: url(/Wallpapers/wallpaper\ \(1\).jpeg) center / cover no-repeat;
+    }
+    section .left .content *{
+        margin-bottom: 10px;
+    }
+
+    section .right{
+        padding: 10px;
+    }
+
+    section .right > div {
+        padding: 20px;
+        float: left;
+        width: 34%;
+        background-color: lightgray;
+        margin-bottom: 10px;
+    }
+
+    section .right div .img{
+        background-color: gray;
+        height: 100px;
+        margin-bottom: 10px;
+        background: url(/Wallpapers/wallpaper\ \(20\).JPG) center / cover no-repeat;
+    }
+</style>
+
+</html>
